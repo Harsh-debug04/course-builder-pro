@@ -406,19 +406,18 @@ print(type(name))  # <class 'str'>
 
 ---
 
-## Summary
 
-In this introduction, you've learned:
-
-- ✅ Python's history and philosophy
-- ✅ Why Python is popular and its key features
-- ✅ How to set up your Python environment
-- ✅ Writing and running your first program
-- ✅ Naming conventions and identifiers
-- ✅ Python keywords and indentation rules
-- ✅ Variables and basic data types
-
-You're now ready to dive deeper into Python programming!
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <ul class="list-none pl-0"><p class="mb-2">In this introduction, you've learned:</p><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>Python's history and philosophy</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>Why Python is popular and its key features</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>How to set up your Python environment</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>Writing and running your first program</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>Naming conventions and identifiers</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>Python keywords and indentation rules</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>Variables and basic data types</span></li><p class="mb-2">You're now ready to dive deeper into Python programming!</p></ul>
+  </div>
+</div>
 
 ---
 
@@ -904,20 +903,18 @@ print(stats)
 
 ---
 
-## Summary
 
-You've learned about Python's essential built-in functions:
-
-| Category | Key Functions |
-|----------|---------------|
-| I/O | \`print()\`, \`input()\` |
-| Type Conversion | \`int()\`, \`float()\`, \`str()\`, \`bool()\`, \`list()\`, \`tuple()\`, \`set()\`, \`dict()\` |
-| Math | \`abs()\`, \`pow()\`, \`round()\`, \`min()\`, \`max()\`, \`sum()\` |
-| Sequences | \`len()\`, \`range()\`, \`sorted()\`, \`reversed()\`, \`enumerate()\`, \`zip()\` |
-| Type Checking | \`type()\`, \`isinstance()\` |
-| Functional | \`map()\`, \`filter()\`, \`all()\`, \`any()\` |
-
-These functions are your everyday tools in Python programming!
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <p class="mb-4">You've learned about Python's essential built-in functions:</p><div class="overflow-x-auto my-4"><table class="min-w-full border border-border rounded-md text-sm"><thead class="bg-muted"><tr><th class="px-4 py-2 text-left font-semibold">Category</th><th class="px-4 py-2 text-left font-semibold">Key Functions</th></tr></thead><tr><td class="px-4 py-2 border-t border-border">I/O</td><td class="px-4 py-2 border-t border-border">\`print()\`, \`input()\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Type Conversion</td><td class="px-4 py-2 border-t border-border">\`int()\`, \`float()\`, \`str()\`, \`bool()\`, \`list()\`, \`tuple()\`, \`set()\`, \`dict()\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Math</td><td class="px-4 py-2 border-t border-border">\`abs()\`, \`pow()\`, \`round()\`, \`min()\`, \`max()\`, \`sum()\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Sequences</td><td class="px-4 py-2 border-t border-border">\`len()\`, \`range()\`, \`sorted()\`, \`reversed()\`, \`enumerate()\`, \`zip()\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Type Checking</td><td class="px-4 py-2 border-t border-border">\`type()\`, \`isinstance()\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Functional</td><td class="px-4 py-2 border-t border-border">\`map()\`, \`filter()\`, \`all()\`, \`any()\`</td></tr></table></div><p class="mb-4">These functions are your everyday tools in Python programming!</p>
+  </div>
+</div>
 
 ---
 
@@ -1404,19 +1401,18 @@ result = (True or False) and False  # False
 
 ---
 
-## Summary
 
-You've mastered Python's operators:
-
-| Operator Type | Examples | Use Case |
-|---------------|----------|----------|
-| Arithmetic | \`+\`, \`-\`, \`*\`, \`/\`, \`//\`, \`%\`, \`**\` | Math calculations |
-| Comparison | \`==\`, \`!=\`, \`<\`, \`>\`, \`<=\`, \`>=\` | Value comparison |
-| Assignment | \`=\`, \`+=\`, \`-=\`, \`:=\` | Value assignment |
-| Logical | \`and\`, \`or\`, \`not\` | Boolean logic |
-| Bitwise | \`&\`, \`|\`, \`^\`, \`~\`, \`<<\`, \`>>\` | Bit manipulation |
-| Identity | \`is\`, \`is not\` | Object identity |
-| Membership | \`in\`, \`not in\` | Sequence containment |
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <p class="mb-4">You've mastered Python's operators:</p><div class="overflow-x-auto my-4"><table class="min-w-full border border-border rounded-md text-sm"><thead class="bg-muted"><tr><th class="px-4 py-2 text-left font-semibold">Operator Type</th><th class="px-4 py-2 text-left font-semibold">Examples</th><th class="px-4 py-2 text-left font-semibold">Use Case</th></tr></thead><tr><td class="px-4 py-2 border-t border-border">Arithmetic</td><td class="px-4 py-2 border-t border-border">\`+\`, \`-\`, \`*\`, \`/\`, \`//\`, \`%\`, \`**\`</td><td class="px-4 py-2 border-t border-border">Math calculations</td></tr><tr><td class="px-4 py-2 border-t border-border">Comparison</td><td class="px-4 py-2 border-t border-border">\`==\`, \`!=\`, \`<\`, \`>\`, \`<=\`, \`>=\`</td><td class="px-4 py-2 border-t border-border">Value comparison</td></tr><tr><td class="px-4 py-2 border-t border-border">Assignment</td><td class="px-4 py-2 border-t border-border">\`=\`, \`+=\`, \`-=\`, \`:=\`</td><td class="px-4 py-2 border-t border-border">Value assignment</td></tr><tr><td class="px-4 py-2 border-t border-border">Logical</td><td class="px-4 py-2 border-t border-border">\`and\`, \`or\`, \`not\`</td><td class="px-4 py-2 border-t border-border">Boolean logic</td></tr><tr><td class="px-4 py-2 border-t border-border">Bitwise</td><td class="px-4 py-2 border-t border-border">\`&\`, \`</td><td class="px-4 py-2 border-t border-border">\`, \`^\`, \`~\`, \`<<\`, \`>>\`</td><td class="px-4 py-2 border-t border-border">Bit manipulation</td></tr><tr><td class="px-4 py-2 border-t border-border">Identity</td><td class="px-4 py-2 border-t border-border">\`is\`, \`is not\`</td><td class="px-4 py-2 border-t border-border">Object identity</td></tr><tr><td class="px-4 py-2 border-t border-border">Membership</td><td class="px-4 py-2 border-t border-border">\`in\`, \`not in\`</td><td class="px-4 py-2 border-t border-border">Sequence containment</td></tr></table></div>
+  </div>
+</div>
 
 ---
 
@@ -1929,19 +1925,18 @@ validate_password("Strong@123")
 
 ---
 
-## Summary
 
-You've learned Python's control flow mechanisms:
-
-| Statement | Purpose | Example |
-|-----------|---------|---------|
-| \`if/elif/else\` | Conditional execution | Decision making |
-| \`match/case\` | Pattern matching | Clean switching |
-| \`for\` | Definite iteration | Iterate over sequences |
-| \`while\` | Indefinite iteration | Repeat until condition |
-| \`break\` | Exit loop early | Found what we need |
-| \`continue\` | Skip iteration | Filter out items |
-| \`pass\` | Placeholder | Empty block |
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <p class="mb-4">You've learned Python's control flow mechanisms:</p><div class="overflow-x-auto my-4"><table class="min-w-full border border-border rounded-md text-sm"><thead class="bg-muted"><tr><th class="px-4 py-2 text-left font-semibold">Statement</th><th class="px-4 py-2 text-left font-semibold">Purpose</th><th class="px-4 py-2 text-left font-semibold">Example</th></tr></thead><tr><td class="px-4 py-2 border-t border-border">\`if/elif/else\`</td><td class="px-4 py-2 border-t border-border">Conditional execution</td><td class="px-4 py-2 border-t border-border">Decision making</td></tr><tr><td class="px-4 py-2 border-t border-border">\`match/case\`</td><td class="px-4 py-2 border-t border-border">Pattern matching</td><td class="px-4 py-2 border-t border-border">Clean switching</td></tr><tr><td class="px-4 py-2 border-t border-border">\`for\`</td><td class="px-4 py-2 border-t border-border">Definite iteration</td><td class="px-4 py-2 border-t border-border">Iterate over sequences</td></tr><tr><td class="px-4 py-2 border-t border-border">\`while\`</td><td class="px-4 py-2 border-t border-border">Indefinite iteration</td><td class="px-4 py-2 border-t border-border">Repeat until condition</td></tr><tr><td class="px-4 py-2 border-t border-border">\`break\`</td><td class="px-4 py-2 border-t border-border">Exit loop early</td><td class="px-4 py-2 border-t border-border">Found what we need</td></tr><tr><td class="px-4 py-2 border-t border-border">\`continue\`</td><td class="px-4 py-2 border-t border-border">Skip iteration</td><td class="px-4 py-2 border-t border-border">Filter out items</td></tr><tr><td class="px-4 py-2 border-t border-border">\`pass\`</td><td class="px-4 py-2 border-t border-border">Placeholder</td><td class="px-4 py-2 border-t border-border">Empty block</td></tr></table></div>
+  </div>
+</div>
 
 ---
 
@@ -2379,19 +2374,18 @@ lengths = {len(word) for word in words}
 
 ---
 
-## Summary Table
 
-| Type | Mutable | Ordered | Duplicates | Example |
-|------|---------|---------|------------|---------|
-| \`int\` | ❌ | N/A | N/A | \`42\` |
-| \`float\` | ❌ | N/A | N/A | \`3.14\` |
-| \`str\` | ❌ | ✅ | ✅ | \`"hello"\` |
-| \`list\` | ✅ | ✅ | ✅ | \`[1, 2, 3]\` |
-| \`tuple\` | ❌ | ✅ | ✅ | \`(1, 2, 3)\` |
-| \`dict\` | ✅ | ✅* | Keys: ❌ | \`{"a": 1}\` |
-| \`set\` | ✅ | ❌ | ❌ | \`{1, 2, 3}\` |
-
-*Dictionaries maintain insertion order in Python 3.7+
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <p class="mb-4">Table</p><div class="overflow-x-auto my-4"><table class="min-w-full border border-border rounded-md text-sm"><thead class="bg-muted"><tr><th class="px-4 py-2 text-left font-semibold">Type</th><th class="px-4 py-2 text-left font-semibold">Mutable</th><th class="px-4 py-2 text-left font-semibold">Ordered</th><th class="px-4 py-2 text-left font-semibold">Duplicates</th><th class="px-4 py-2 text-left font-semibold">Example</th></tr></thead><tr><td class="px-4 py-2 border-t border-border">\`int\`</td><td class="px-4 py-2 border-t border-border">❌</td><td class="px-4 py-2 border-t border-border">N/A</td><td class="px-4 py-2 border-t border-border">N/A</td><td class="px-4 py-2 border-t border-border">\`42\`</td></tr><tr><td class="px-4 py-2 border-t border-border">\`float\`</td><td class="px-4 py-2 border-t border-border">❌</td><td class="px-4 py-2 border-t border-border">N/A</td><td class="px-4 py-2 border-t border-border">N/A</td><td class="px-4 py-2 border-t border-border">\`3.14\`</td></tr><tr><td class="px-4 py-2 border-t border-border">\`str\`</td><td class="px-4 py-2 border-t border-border">❌</td><td class="px-4 py-2 border-t border-border">✅</td><td class="px-4 py-2 border-t border-border">✅</td><td class="px-4 py-2 border-t border-border">\`"hello"\`</td></tr><tr><td class="px-4 py-2 border-t border-border">\`list\`</td><td class="px-4 py-2 border-t border-border">✅</td><td class="px-4 py-2 border-t border-border">✅</td><td class="px-4 py-2 border-t border-border">✅</td><td class="px-4 py-2 border-t border-border">\`[1, 2, 3]\`</td></tr><tr><td class="px-4 py-2 border-t border-border">\`tuple\`</td><td class="px-4 py-2 border-t border-border">❌</td><td class="px-4 py-2 border-t border-border">✅</td><td class="px-4 py-2 border-t border-border">✅</td><td class="px-4 py-2 border-t border-border">\`(1, 2, 3)\`</td></tr><tr><td class="px-4 py-2 border-t border-border">\`dict\`</td><td class="px-4 py-2 border-t border-border">✅</td><td class="px-4 py-2 border-t border-border">✅*</td><td class="px-4 py-2 border-t border-border">Keys: ❌</td><td class="px-4 py-2 border-t border-border">\`{"a": 1}\`</td></tr><tr><td class="px-4 py-2 border-t border-border">\`set\`</td><td class="px-4 py-2 border-t border-border">✅</td><td class="px-4 py-2 border-t border-border">❌</td><td class="px-4 py-2 border-t border-border">❌</td><td class="px-4 py-2 border-t border-border">\`{1, 2, 3}\`</td></tr></table></div><p class="mb-4">*Dictionaries maintain insertion order in Python 3.7+</p>
+  </div>
+</div>
 
 ---
 
@@ -2888,19 +2882,18 @@ print(fibonacci_fast(100))  # 354224848179261915075
 
 ---
 
-## Summary
 
-| Concept | Description | Example |
-|---------|-------------|---------|
-| Basic function | Reusable code block | \`def greet(): ...\` |
-| Parameters | Inputs to function | \`def add(a, b): ...\` |
-| Return values | Output from function | \`return result\` |
-| Default args | Optional parameters | \`def f(x=10): ...\` |
-| *args | Variable positional | \`def f(*args): ...\` |
-| **kwargs | Variable keyword | \`def f(**kwargs): ...\` |
-| Lambda | Anonymous function | \`lambda x: x**2\` |
-| Decorator | Function modifier | \`@timer\` |
-| Recursion | Self-calling function | Base case + recursive case |
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <div class="overflow-x-auto my-4"><table class="min-w-full border border-border rounded-md text-sm"><thead class="bg-muted"><tr><th class="px-4 py-2 text-left font-semibold">Concept</th><th class="px-4 py-2 text-left font-semibold">Description</th><th class="px-4 py-2 text-left font-semibold">Example</th></tr></thead><tr><td class="px-4 py-2 border-t border-border">Basic function</td><td class="px-4 py-2 border-t border-border">Reusable code block</td><td class="px-4 py-2 border-t border-border">\`def greet(): ...\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Parameters</td><td class="px-4 py-2 border-t border-border">Inputs to function</td><td class="px-4 py-2 border-t border-border">\`def add(a, b): ...\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Return values</td><td class="px-4 py-2 border-t border-border">Output from function</td><td class="px-4 py-2 border-t border-border">\`return result\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Default args</td><td class="px-4 py-2 border-t border-border">Optional parameters</td><td class="px-4 py-2 border-t border-border">\`def f(x=10): ...\`</td></tr><tr><td class="px-4 py-2 border-t border-border">*args</td><td class="px-4 py-2 border-t border-border">Variable positional</td><td class="px-4 py-2 border-t border-border">\`def f(*args): ...\`</td></tr><tr><td class="px-4 py-2 border-t border-border">**kwargs</td><td class="px-4 py-2 border-t border-border">Variable keyword</td><td class="px-4 py-2 border-t border-border">\`def f(**kwargs): ...\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Lambda</td><td class="px-4 py-2 border-t border-border">Anonymous function</td><td class="px-4 py-2 border-t border-border">\`lambda x: x**2\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Decorator</td><td class="px-4 py-2 border-t border-border">Function modifier</td><td class="px-4 py-2 border-t border-border">\`@timer\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Recursion</td><td class="px-4 py-2 border-t border-border">Self-calling function</td><td class="px-4 py-2 border-t border-border">Base case + recursive case</td></tr></table></div>
+  </div>
+</div>
 
 ---
 
@@ -3330,18 +3323,18 @@ class _PrivateClass:
 
 ---
 
-## Summary
 
-| Concept | Description |
-|---------|-------------|
-| Module | Single .py file with reusable code |
-| Package | Directory with __init__.py containing modules |
-| import | Load entire module |
-| from ... import | Load specific items |
-| pip | Package installer for Python |
-| venv | Virtual environment for isolation |
-| \`__name__\` | Determines if module is run directly |
-| \`__all__\` | Controls what's exported with * import |
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <div class="overflow-x-auto my-4"><table class="min-w-full border border-border rounded-md text-sm"><thead class="bg-muted"><tr><th class="px-4 py-2 text-left font-semibold">Concept</th><th class="px-4 py-2 text-left font-semibold">Description</th></tr></thead><tr><td class="px-4 py-2 border-t border-border">Module</td><td class="px-4 py-2 border-t border-border">Single .py file with reusable code</td></tr><tr><td class="px-4 py-2 border-t border-border">Package</td><td class="px-4 py-2 border-t border-border">Directory with __init__.py containing modules</td></tr><tr><td class="px-4 py-2 border-t border-border">import</td><td class="px-4 py-2 border-t border-border">Load entire module</td></tr><tr><td class="px-4 py-2 border-t border-border">from ... import</td><td class="px-4 py-2 border-t border-border">Load specific items</td></tr><tr><td class="px-4 py-2 border-t border-border">pip</td><td class="px-4 py-2 border-t border-border">Package installer for Python</td></tr><tr><td class="px-4 py-2 border-t border-border">venv</td><td class="px-4 py-2 border-t border-border">Virtual environment for isolation</td></tr><tr><td class="px-4 py-2 border-t border-border">\`__name__\`</td><td class="px-4 py-2 border-t border-border">Determines if module is run directly</td></tr><tr><td class="px-4 py-2 border-t border-border">\`__all__\`</td><td class="px-4 py-2 border-t border-border">Controls what's exported with * import</td></tr></table></div>
+  </div>
+</div>
 
 ---
 
@@ -3712,19 +3705,18 @@ with tempfile.TemporaryDirectory() as tmpdir:
 
 ---
 
-## Summary
 
-| Operation | Method |
-|-----------|--------|
-| Open file | \`with open(path, mode) as f:\` |
-| Read all | \`f.read()\` |
-| Read lines | \`f.readlines()\` or iterate |
-| Write | \`f.write(text)\` |
-| JSON read | \`json.load(f)\` |
-| JSON write | \`json.dump(data, f)\` |
-| CSV read | \`csv.reader(f)\` |
-| CSV write | \`csv.writer(f)\` |
-| Path handling | \`pathlib.Path\` |
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <div class="overflow-x-auto my-4"><table class="min-w-full border border-border rounded-md text-sm"><thead class="bg-muted"><tr><th class="px-4 py-2 text-left font-semibold">Operation</th><th class="px-4 py-2 text-left font-semibold">Method</th></tr></thead><tr><td class="px-4 py-2 border-t border-border">Open file</td><td class="px-4 py-2 border-t border-border">\`with open(path, mode) as f:\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Read all</td><td class="px-4 py-2 border-t border-border">\`f.read()\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Read lines</td><td class="px-4 py-2 border-t border-border">\`f.readlines()\` or iterate</td></tr><tr><td class="px-4 py-2 border-t border-border">Write</td><td class="px-4 py-2 border-t border-border">\`f.write(text)\`</td></tr><tr><td class="px-4 py-2 border-t border-border">JSON read</td><td class="px-4 py-2 border-t border-border">\`json.load(f)\`</td></tr><tr><td class="px-4 py-2 border-t border-border">JSON write</td><td class="px-4 py-2 border-t border-border">\`json.dump(data, f)\`</td></tr><tr><td class="px-4 py-2 border-t border-border">CSV read</td><td class="px-4 py-2 border-t border-border">\`csv.reader(f)\`</td></tr><tr><td class="px-4 py-2 border-t border-border">CSV write</td><td class="px-4 py-2 border-t border-border">\`csv.writer(f)\`</td></tr><tr><td class="px-4 py-2 border-t border-border">Path handling</td><td class="px-4 py-2 border-t border-border">\`pathlib.Path\`</td></tr></table></div>
+  </div>
+</div>
 
 ---
 

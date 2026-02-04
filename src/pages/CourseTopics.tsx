@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import Header from "@/components/Header";
 import TopicSidebar from "@/components/TopicSidebar";
 import TopicContent from "@/components/TopicContent";
@@ -61,7 +62,17 @@ const CourseTopics = () => {
         {/* Main Content - Natural page-level scrolling */}
         <main className="flex-1 min-w-0">
           <div className="max-w-4xl mx-auto px-4 py-8 lg:px-8 lg:py-12">
-            <TopicContent topic={activeTopic} />
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeTopicId}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
+                <TopicContent topic={activeTopic} />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </main>
       </div>

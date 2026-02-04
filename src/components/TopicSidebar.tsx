@@ -2,6 +2,7 @@ import { ChevronLeft, ChevronDown, ChevronRight } from "lucide-react";
 import { Topic, pythonCourse, getModuleByTopicId } from "@/data/courseData";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface TopicSidebarProps {
   topics: Topic[];
@@ -78,7 +79,7 @@ const TopicSidebar = ({
               <button
                 onClick={() => toggleModule(module.id)}
                 className={cn(
-                  "w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-sidebar-accent transition-colors",
+                  "w-full flex items-center gap-2 px-3 py-2 text-left hover:bg-sidebar-accent transition-colors group",
                   hasActiveTopic && "bg-primary/5"
                 )}
               >
@@ -92,7 +93,7 @@ const TopicSidebar = ({
                     Module {module.number}
                   </span>
                   <p className={cn(
-                    "text-sm font-medium truncate",
+                    "text-sm font-medium truncate group-hover:text-primary transition-colors",
                     hasActiveTopic ? "text-primary" : "text-sidebar-foreground"
                   )}>
                     {module.title}
@@ -101,39 +102,47 @@ const TopicSidebar = ({
               </button>
 
               {/* Topics within Module */}
-              {isExpanded && (
-                <ul className="space-y-0.5 px-2 pb-2">
-                  {module.topics.map((topic) => {
-                    globalTopicNumber++;
-                    const currentNumber = globalTopicNumber;
-                    const isActive = topic.id === activeTopicId;
-                    
-                    return (
-                      <li key={topic.id}>
-                        <button
-                          onClick={() => onTopicSelect(topic.id)}
-                          className={cn(
-                            "topic-item w-full text-left ml-4",
-                            isActive && "active"
-                          )}
-                        >
-                          <span
+              <AnimatePresence initial={false}>
+                {isExpanded && (
+                  <motion.ul
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="space-y-0.5 px-2 pb-2 overflow-hidden"
+                  >
+                    {module.topics.map((topic) => {
+                      globalTopicNumber++;
+                      const currentNumber = globalTopicNumber;
+                      const isActive = topic.id === activeTopicId;
+
+                      return (
+                        <li key={topic.id}>
+                          <button
+                            onClick={() => onTopicSelect(topic.id)}
                             className={cn(
-                              "topic-number",
-                              isActive && "bg-primary text-primary-foreground"
+                              "topic-item w-full text-left ml-4 transition-all duration-200",
+                              isActive && "active translate-x-1"
                             )}
                           >
-                            {currentNumber}
-                          </span>
-                          <span className="text-sm font-medium truncate">
-                            {topic.title}
-                          </span>
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
+                            <span
+                              className={cn(
+                                "topic-number",
+                                isActive && "bg-primary text-primary-foreground"
+                              )}
+                            >
+                              {currentNumber}
+                            </span>
+                            <span className="text-sm font-medium truncate">
+                              {topic.title}
+                            </span>
+                          </button>
+                        </li>
+                      );
+                    })}
+                  </motion.ul>
+                )}
+              </AnimatePresence>
             </div>
           );
         })}

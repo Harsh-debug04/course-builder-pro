@@ -1,8 +1,9 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneLight, oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { Copy, Check } from "lucide-react";
+import { Copy, Check, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
 
 interface MarkdownRendererProps {
@@ -14,6 +15,7 @@ const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
     <div className="prose-course animate-fade-in">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
         components={{
           code({ node, className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || "");
