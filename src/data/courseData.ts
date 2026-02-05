@@ -3749,6 +3749,320 @@ with tempfile.TemporaryDirectory() as tmpdir:
         }
       ]
     }
+,
+    {
+      id: "module-dsa",
+      number: 2,
+      title: "Data Structures & Algorithms",
+      description: "Master the fundamental building blocks of efficient software with this comprehensive DSA module.",
+      topics: [
+        {
+          id: "arrays-hashing",
+          number: 1,
+          title: "Arrays & Hashing",
+          content: `# Arrays & Hashing
+
+Arrays are the simplest and most widely used data structure. Hashing allows for O(1) average time complexity lookups. Mastering these is crucial for coding interviews.
+
+---
+
+## Understanding Arrays
+
+An **array** is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together.
+
+### Key Characteristics
+
+- **Contiguous Memory:** Elements are stored side-by-side.
+- **Fixed Size:** In many languages (like C++ or Java), size is fixed. Python lists are dynamic arrays.
+- **Random Access:** You can access any element in O(1) time using its index.
+
+### Time Complexity
+
+| Operation | Time Complexity | Note |
+|-----------|-----------------|------|
+| Access    | O(1)            | Indexing |
+| Search    | O(n)            | Linear search |
+| Insertion | O(n)            | Shifting elements required |
+| Deletion  | O(n)            | Shifting elements required |
+
+\`\`\`python
+# Python List (Dynamic Array) operations
+arr = [1, 2, 3]
+
+# Access - O(1)
+print(arr[0])
+
+# Append - Amortized O(1)
+arr.append(4)
+
+# Insert - O(n)
+arr.insert(1, 99)
+\`\`\`
+
+---
+
+## Hashing (Hash Maps/Sets)
+
+**Hashing** is a technique to convert a range of key values into a range of indexes of an array.
+
+### Hash Map (Dictionary)
+
+Stores key-value pairs. Keys must be unique and hashable (immutable).
+
+\`\`\`python
+# Creating a hash map
+scores = {"Alice": 95, "Bob": 88}
+
+# Access - O(1) average
+print(scores["Alice"])
+
+# Insertion/Update - O(1) average
+scores["Charlie"] = 92
+
+# Check existence - O(1) average
+if "Alice" in scores:
+    print("Found!")
+\`\`\`
+
+### Hash Set
+
+Stores only unique keys (no values). Useful for checking presence or removing duplicates.
+
+\`\`\`python
+# Creating a set
+unique_nums = {1, 2, 3, 2, 1}
+print(unique_nums)  # {1, 2, 3}
+
+# O(1) lookup
+print(2 in unique_nums)  # True
+\`\`\`
+
+---
+
+## Common Patterns
+
+### 1. Two Sum
+
+Given an array of integers and a target, return indices of the two numbers such that they add up to target.
+
+**Naive Approach (O(n²)):** Nested loops.
+**Optimal Approach (O(n)):** Use a Hash Map to store complements.
+
+\`\`\`python
+def two_sum(nums, target):
+    prev_map = {}  # val : index
+
+    for i, n in enumerate(nums):
+        diff = target - n
+        if diff in prev_map:
+            return [prev_map[diff], i]
+        prev_map[n] = i
+    return []
+\`\`\`
+
+### 2. Contains Duplicate
+
+Check if any value appears at least twice.
+
+\`\`\`python
+def contains_duplicate(nums):
+    seen = set()
+    for n in nums:
+        if n in seen:
+            return True
+        seen.add(n)
+    return False
+
+    # Or simply:
+    # return len(set(nums)) != len(nums)
+\`\`\`
+
+---
+
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <ul class="list-none pl-0 space-y-2 mb-4"><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span><strong>Arrays</strong> offer O(1) access but O(n) insertion/deletion.</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span><strong>Hash Maps</strong> (Dicts) offer O(1) average lookup, insertion, and deletion.</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>Use a <strong>Set</strong> to quickly check for duplicates or existence.</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span><strong>Space-Time Tradeoff:</strong> Using a hash map increases space complexity to O(n) but often reduces time complexity from O(n²) to O(n).</span></li></ul>
+  </div>
+</div>
+`,
+          quickCheck: [
+            {
+              id: "dsa-1-1",
+              question: "What is the average time complexity for looking up a key in a Hash Map?",
+              options: [
+                { id: "a", text: "O(n)", isCorrect: false },
+                { id: "b", text: "O(log n)", isCorrect: false },
+                { id: "c", text: "O(1)", isCorrect: true },
+                { id: "d", text: "O(n^2)", isCorrect: false }
+              ],
+              explanation: "Hash Maps use a hashing function to map keys to indices, allowing for direct access (O(1)) on average."
+            },
+            {
+              id: "dsa-1-2",
+              question: "Which data structure is best for checking if a value exists in a collection?",
+              options: [
+                { id: "a", text: "Array", isCorrect: false },
+                { id: "b", text: "Linked List", isCorrect: false },
+                { id: "c", text: "Hash Set", isCorrect: true },
+                { id: "d", text: "Queue", isCorrect: false }
+              ],
+              explanation: "A Hash Set is optimized for membership testing, offering O(1) average time complexity compared to O(n) for lists/arrays."
+            }
+          ]
+        },
+        {
+          id: "two-pointers",
+          number: 2,
+          title: "Two Pointers",
+          content: `# Two Pointers Technique
+
+The **Two Pointers** pattern is a versatile technique used to solve array and string problems efficiently. It involves using two pointers to iterate through the data structure, often to find a pair, reverse data, or solve partitioning problems.
+
+---
+
+## When to Use Two Pointers
+
+This technique is most effective when:
+1.  **Processing Sorted Arrays:** To find pairs that sum to a target.
+2.  **Reversing/Swapping:** To reverse strings or arrays in-place.
+3.  **Partitioning:** Moving elements based on a condition (e.g., move zeroes to end).
+4.  **Comparing Ends:** Checking for palindromes.
+
+---
+
+## Scenario 1: Valid Palindrome
+
+Check if a string is a palindrome (reads the same forwards and backwards), ignoring non-alphanumeric characters.
+
+**Algorithm:**
+1.  Initialize \`left\` at start (0) and \`right\` at end (len-1).
+2.  While \`left < right\`:
+    - Move \`left\` forward if not alphanumeric.
+    - Move \`right\` backward if not alphanumeric.
+    - Compare characters. If mismatch, return \`False\`.
+    - Move both pointers inward.
+
+\`\`\`python
+def is_palindrome(s):
+    l, r = 0, len(s) - 1
+
+    while l < r:
+        while l < r and not s[l].isalnum():
+            l += 1
+        while l < r and not s[r].isalnum():
+            r -= 1
+
+        if s[l].lower() != s[r].lower():
+            return False
+
+        l, r = l + 1, r - 1
+
+    return True
+\`\`\`
+
+---
+
+## Scenario 2: Two Sum II (Sorted Array)
+
+Given a **sorted** array, find two numbers that sum to target.
+
+**Naive:** Nested loop O(n²).
+**Hash Map:** O(n) space.
+**Two Pointers:** O(n) time, **O(1) space**.
+
+**Logic:**
+- If \`sum > target\`: We need a smaller sum. Since array is sorted, decrease \`right\`.
+- If \`sum < target\`: We need a larger sum. Increase \`left\`.
+
+\`\`\`python
+def two_sum_sorted(numbers, target):
+    l, r = 0, len(numbers) - 1
+
+    while l < r:
+        cur_sum = numbers[l] + numbers[r]
+
+        if cur_sum > target:
+            r -= 1
+        elif cur_sum < target:
+            l += 1
+        else:
+            return [l + 1, r + 1]  # 1-indexed
+
+    return []
+\`\`\`
+
+---
+
+## Scenario 3: Container With Most Water
+
+Find two lines that form a container such that it holds the most water.
+
+\`\`\`python
+def max_area(height):
+    l, r = 0, len(height) - 1
+    res = 0
+
+    while l < r:
+        # Area = width * min_height
+        area = (r - l) * min(height[l], height[r])
+        res = max(res, area)
+
+        # Move the smaller pointer to potentially find a taller bar
+        if height[l] < height[r]:
+            l += 1
+        else:
+            r -= 1
+
+    return res
+\`\`\`
+
+---
+
+<div class="bg-card text-card-foreground border border-border rounded-lg p-6 my-8 shadow-sm">
+  <div class="flex items-center gap-3 mb-4">
+    <div class="p-2 bg-primary/10 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-primary"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+    </div>
+    <h3 class="text-xl font-semibold m-0">Summary</h3>
+  </div>
+  <div class="text-muted-foreground leading-relaxed">
+    <ul class="list-none pl-0 space-y-2 mb-4"><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>Two Pointers technique reduces time complexity (often O(n²) to O(n)) and space complexity (O(n) to O(1)).</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span>It relies on the structure of the data (e.g., sorted array, palindrome symmetry).</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span><strong>Opposite Directions:</strong> One at start, one at end (Palindrome, Two Sum Sorted).</span></li><li class="flex items-start gap-2 mb-2"><span class="text-primary mt-1">•</span><span><strong>Same Direction:</strong> (Fast/Slow pointers) - Used for cycle detection or sliding windows (covered later).</span></li></ul>
+  </div>
+</div>
+`,
+          quickCheck: [
+            {
+              id: "dsa-2-1",
+              question: "The Two Pointers technique is most effective on what kind of array for finding a target sum?",
+              options: [
+                { id: "a", text: "Any array", isCorrect: false },
+                { id: "b", text: "Sorted array", isCorrect: true },
+                { id: "c", text: "Reverse sorted array only", isCorrect: false },
+                { id: "d", text: "Array with distinct values", isCorrect: false }
+              ],
+              explanation: "If the array is sorted, we can deterministically decide which pointer to move to increase or decrease the current sum toward the target."
+            },
+            {
+              id: "dsa-2-2",
+              question: "What is the typical space complexity of a Two Pointer solution?",
+              options: [
+                { id: "a", text: "O(n)", isCorrect: false },
+                { id: "b", text: "O(log n)", isCorrect: false },
+                { id: "c", text: "O(1)", isCorrect: true },
+                { id: "d", text: "O(n^2)", isCorrect: false }
+              ],
+              explanation: "Two pointers usually operate in-place using only a few variables for the pointers themselves, resulting in constant O(1) space complexity."
+            }
+          ]
+        }
+      ]
+    },
   ]
 };
 
