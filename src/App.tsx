@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { AuthProvider } from "@/hooks/useAuth";
+import { ProgressProvider } from "@/hooks/useProgress";
 import ProtectedRoute from "@/components/ProtectedRoute";
 import Index from "./pages/Index";
 import Login from "./pages/Login";
@@ -18,10 +19,11 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <AuthProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <ErrorBoundary>
+      <ProgressProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <ErrorBoundary>
           <BrowserRouter>
             <Routes>
               {/* Public Routes */}
@@ -38,9 +40,10 @@ const App = () => (
               {/* Catch-all */}
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </BrowserRouter>
-        </ErrorBoundary>
-      </TooltipProvider>
+            </BrowserRouter>
+          </ErrorBoundary>
+        </TooltipProvider>
+      </ProgressProvider>
     </AuthProvider>
   </QueryClientProvider>
 );

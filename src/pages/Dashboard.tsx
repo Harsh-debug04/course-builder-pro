@@ -1,18 +1,21 @@
 import { useAuth } from "@/hooks/useAuth";
-import { pythonCourse, getCourseProgress } from "@/data/courseData";
+import { useProgress } from "@/hooks/useProgress";
+import { pythonCourse, getAllTopics } from "@/data/courseData";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { BookOpen, Code, Trophy, ArrowRight, Activity, Calendar } from "lucide-react";
+import { BookOpen, Code, Trophy, ArrowRight, Activity } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 
 const Dashboard = () => {
   const { user } = useAuth();
+  const { progressPercentage, completedTopics } = useProgress();
   const navigate = useNavigate();
 
-  // Mock progress for now (since we don't store actual progress in this version yet)
-  const courseProgress = 15; // 15% complete
+  const allTopics = getAllTopics();
+  const completedCount = completedTopics.length;
+  const totalCount = allTopics.length;
 
   return (
     <div className="min-h-screen bg-background">
@@ -38,12 +41,12 @@ const Dashboard = () => {
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Total Solved</CardTitle>
+              <CardTitle className="text-sm font-medium">Topics Completed</CardTitle>
               <Code className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">12</div>
-              <p className="text-xs text-muted-foreground">+2 from yesterday</p>
+              <div className="text-2xl font-bold">{completedCount}</div>
+              <p className="text-xs text-muted-foreground">/{totalCount} Topics</p>
             </CardContent>
           </Card>
           <Card>
@@ -62,8 +65,8 @@ const Dashboard = () => {
               <Trophy className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">Beginner</div>
-              <p className="text-xs text-muted-foreground">Level 1 unlocked</p>
+              <div className="text-2xl font-bold">{progressPercentage >= 100 ? "Master" : progressPercentage >= 50 ? "Intermediate" : "Beginner"}</div>
+              <p className="text-xs text-muted-foreground">{progressPercentage}% Course Complete</p>
             </CardContent>
           </Card>
         </div>
@@ -87,10 +90,10 @@ const Dashboard = () => {
               </div>
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-sm">
-                  <span className="font-medium">{courseProgress}% Complete</span>
-                  <span className="text-muted-foreground">4/25 Topics</span>
+                  <span className="font-medium">{progressPercentage}% Complete</span>
+                  <span className="text-muted-foreground">{completedCount}/{totalCount} Topics</span>
                 </div>
-                <Progress value={courseProgress} className="h-2" />
+                <Progress value={progressPercentage} className="h-2" />
               </div>
             </CardContent>
             <CardFooter>
