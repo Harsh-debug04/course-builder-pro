@@ -2,11 +2,11 @@
 
 A comprehensive, responsive, and interactive course platform built with React, TypeScript, and Vite. This project serves as a robust template for educational content, currently demonstrating a "Python Fundamentals" course.
 
-## 🚀 Overview
+## Overview
 
 This application provides a seamless learning experience with a clean user interface. It is designed to host structured course content, featuring modules, topics, rich text rendering, and interactive quizzes. The architecture is data-driven, making it easy to extend or replace the content with your own curriculum.
 
-## ✨ Features
+## Features
 
 -   **Interactive Learning Interface**: Clean, distraction-free reading environment.
 -   **Markdown Support**: Rich text rendering for course content using `react-markdown` and `remark-gfm`.
@@ -19,7 +19,7 @@ This application provides a seamless learning experience with a clean user inter
 -   **Responsive Design**: Fully responsive UI built with Tailwind CSS, ensuring a great experience on Desktop, Tablet, and Mobile.
 -   **Modern UI Components**: Utilizes Shadcn UI (based on Radix UI) for accessible and customizable components.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 -   **Framework**: [React](https://react.dev/)
 -   **Build Tool**: [Vite](https://vitejs.dev/)
@@ -31,7 +31,7 @@ This application provides a seamless learning experience with a clean user inter
 -   **Icons**: [Lucide React](https://lucide.dev/)
 -   **Content Rendering**: `react-markdown`, `remark-gfm`
 
-## 🏁 Getting Started
+## Getting Started
 
 Follow these steps to get the project up and running on your local machine.
 
@@ -66,7 +66,7 @@ Ensure you have the following installed:
 4.  **Open the application:**
     Open your browser and navigate to `http://localhost:8080` (or the port shown in your terminal).
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 src/
@@ -85,7 +85,7 @@ src/
 └── main.tsx            # React DOM rendering
 ```
 
-## ✏️ Customizing Content
+## Customizing Content
 
 The course content is entirely data-driven and located in `src/data/courseData.ts`. To add your own course:
 
@@ -115,7 +115,7 @@ The course content is entirely data-driven and located in `src/data/courseData.t
 }
 ```
 
-## 📜 Scripts
+## Scripts
 
 -   `npm run dev`: Starts the development server.
 -   `npm run build`: Builds the app for production.
@@ -123,7 +123,7 @@ The course content is entirely data-driven and located in `src/data/courseData.t
 -   `npm run preview`: Locally previews the production build.
 -   `npm test`: Runs tests using Vitest.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -133,6 +133,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4.  Push to the branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
